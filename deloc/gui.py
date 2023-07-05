@@ -126,7 +126,7 @@ class GUI(QWidget):
         q_step = float(self.q_step_field.text())
 
         # Perform calculations
-        q_inel_lp_min, q_inel_lp_max, q_inel_up_min, q_inel_up_max = dl.inelastic(
+        q_inel_lp_min, q_inel_lp_max, q_inel_up_min = dl.inelastic(
             m, Ec, E0, Lc, Delta, Gamma_Ex, Gamma_L, q_initial, q_final, q_step)
 
         # Display results
